@@ -1,5 +1,6 @@
 :root {
     --gutter-global: 24px;
+    --inline-global: 400px;
 }
 
 * {
@@ -30,6 +31,74 @@ main {
 #intro p {
     width: 600px;
     text-align: justify;
+    margin-bottom: var(--gutter-global);
+}
+
+#life-hack-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--gutter-global);
+}
+
+#life-hack {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    margin: var(--gutter-global);
+    position: relative;
+}
+
+#life-hack img {
+    border-radius: var(--gutter-global);
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h2 {
+    inline-size: var(--inline-global);
+    position: absolute;
+    top: var(--gutter-global);
+    left: var(--gutter-global);
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: white;
+}
+
+#quotes {
+    display: flex;
+    justify-content: center;
+
+}
+
+blockquote p {
+    margin: 8px auto;
+    inline-size: calc(var(--inline-global) * 1.5);
+    text-align: left;
+}
+
+#citation-one {
+    margin-bottom: var(--gutter-global);
+}
+#quote-one, #quote-two {
+    font-weight: bold;
+}
+
+#article-copy {
+    inline-size: calc(var(--inline-global) * 2);
+    margin: 24px auto;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+#life-hack-section a{
+    font-weight: bold;
+    margin: 4px auto;
+    cursor: pointer;
 }
 
 footer {
