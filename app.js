@@ -1,8 +1,16 @@
 // import functions and grab DOM elements
+import { getHacks } from './fetch-utils.js';
+import { renderHack } from './render-utils.js';
 
-// let state
+const hackListEl = document.getElementById('life-hack');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+async function loadData() {
+    const hacks = await getHacks();
+
+    for (let hack of hacks) {
+        const hackEl = renderHack(hack);
+        hackListEl.append(hackEl);
+    }
+}
+
+loadData();
