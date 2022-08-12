@@ -69,7 +69,7 @@ h2 {
     color: white;
 }
 
-#quotes {
+.quotes {
     display: flex;
     justify-content: center;
 
@@ -81,24 +81,31 @@ blockquote p {
     text-align: left;
 }
 
-#citation-one {
+.citation-one {
     margin-bottom: var(--gutter-global);
 }
-#quote-one, #quote-two {
+.quote-one, .quote-two {
     font-weight: bold;
 }
 
-#article-copy {
+.article-copy {
     inline-size: calc(var(--inline-global) * 2);
     margin: 24px auto;
     text-align: justify;
     font-size: 1.2rem;
 }
 
-#life-hack-section a{
+#life-hack-section a {
     font-weight: bold;
     margin: 4px auto;
     cursor: pointer;
+}
+
+.resources {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
