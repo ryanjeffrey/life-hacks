@@ -102,6 +102,8 @@ blockquote p {
     margin: 4px auto;
     cursor: pointer;
     background-color: aliceblue;
+    text-decoration: none;
+    color: black;
 }
 
 .resources {
@@ -109,6 +111,7 @@ blockquote p {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    margin-bottom: 96px;
 }
 
 footer {

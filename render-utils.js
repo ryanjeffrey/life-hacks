@@ -30,6 +30,11 @@ export function renderHack(hack) {
     img.src = `./assets/${hack.keyword}.jpg`;
     titleEl.textContent = hack.title;
 
+    resourceOneEl.href = hack.url_one;
+    resourceOneEl.target = '_blank';
+    resourceTwoEl.href = hack.url_two;
+    resourceTwoEl.target = '_blank';
+
     quoteOneEl.textContent = hack.quote_one;
     citationOneEl.textContent = hack.citation_one;
     quoteTwoEl.textContent = hack.quote_two;
