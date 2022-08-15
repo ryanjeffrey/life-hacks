@@ -13,6 +13,9 @@ export function renderHack(hack) {
     const citationTwoEl = document.createElement('p');
 
     const articleCopyEl = document.createElement('p');
+    const articleCopyTwoEl = document.createElement('p');
+    const articleCopyThreeEl = document.createElement('p');
+    const articleCopyFourEl = document.createElement('p');
     const resourcesDiv = document.createElement('div');
     const resourceOneEl = document.createElement('a');
     const resourceTwoEl = document.createElement('a');
@@ -25,6 +28,9 @@ export function renderHack(hack) {
     quoteTwoEl.classList.add('quote-two');
     citationTwoEl.classList.add('citation-two');
     articleCopyEl.classList.add('article-copy');
+    articleCopyTwoEl.classList.add('article-copy');
+    articleCopyThreeEl.classList.add('article-copy');
+    articleCopyFourEl.classList.add('article-copy');
     resourcesDiv.classList.add('resources');
 
     img.src = `./assets/${hack.keyword}.jpg`;
@@ -41,6 +47,10 @@ export function renderHack(hack) {
     citationTwoEl.textContent = hack.citation_two;
 
     articleCopyEl.textContent = hack.article_copy;
+    articleCopyTwoEl.textContent = hack.article_copy_two;
+    articleCopyThreeEl.textContent = hack.article_copy_three;
+    articleCopyFourEl.textContent = hack.article_copy_four;
+
     resourceOneEl.textContent = hack.resource_one;
     resourceTwoEl.textContent = hack.resource_two;
 
@@ -51,7 +61,7 @@ export function renderHack(hack) {
 
     resourcesDiv.append(resourceOneEl, resourceTwoEl);
 
-    lifeHackDiv.append(containerDiv, quotesDiv, articleCopyEl, resourcesDiv);
+    lifeHackDiv.append(containerDiv, quotesDiv, articleCopyEl, articleCopyTwoEl, articleCopyThreeEl, articleCopyFourEl, resourcesDiv);
 
     return lifeHackDiv;
 }
